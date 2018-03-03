@@ -146,7 +146,7 @@ def attacksMenu():
     print
     print "0) Location Tracking".rjust(23)
     print "1) Call and SMS Interception".rjust(31)
-    print "2) Fraud".rjust(11)
+    print "2) Fraud & Info Gathering".rjust(28)
     print "3) DoS".rjust(9)
     print
     print "or type back to return to the main menu".rjust(42)
