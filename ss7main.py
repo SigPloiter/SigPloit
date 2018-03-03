@@ -25,13 +25,13 @@ def LocationTracking():
     print " \033[31mLocation Tracking\033[0m ".center(105, "#")
     print " \033[34mSelect a Message from the below\033[0m ".center(105, "#")
     print
-    print "   Message".rjust(10) + "\t\t\tCategory"
-    print "   --------                    --------"
-    print "0) SendRoutingInfo".rjust(21) + "\t\t CAT1"
-    print "1) ProvideSubsriberInfo".rjust(26) + "\t CAT2"
-    print "2) SendRoutingInfoForSM".rjust(26) + "\t CAT3"
-    print "3) AnyTimeInterrogation".rjust(26) + "\t CAT1"
-    print "4) SendRoutingInfoForGPRS".rjust(28) + "\t CAT1"
+    print "   Message".rjust(10) + "\t\t\tDescription"
+    print "   --------                    ------------"
+    print "0) SendRoutingInfo".rjust(21) + "\t\tLocation Tracking, used to route calls could be blocked"
+    print "1) ProvideSubsriberInfo".rjust(26) + "\tReliable Location Tracking"
+    print "2) SendRoutingInfoForSM".rjust(26) + "\tReliable Location Tracking, if SMS home routing is not applied,should be run twice to check consistent replies"
+    print "3) AnyTimeInterrogation".rjust(26) + "\tLocation Tracking, blocked by most of operators"
+    print "4) SendRoutingInfoForGPRS".rjust(28) + "\tLocation tracking, used to route data, it will retrieve SGSN GT"
 
     print
     print "or type back to go back to Attacks Menu".rjust(42)
@@ -63,9 +63,9 @@ def Interception():
     print " \033[31mInterception\033[0m ".center(105, "#")
     print " \033[34mSelect a Message from the below\033[0m ".center(105, "#")
     print
-    print "   Message".rjust(10) + "\t\t\t\tCategory"
-    print "   --------                             --------"
-    print "0) UpdateLocation-SMS Interception".rjust(37) + "\t CAT3"
+    print "   Message".rjust(10) + "\t\t\t\tDescription"
+    print "   --------                             -----------"
+    print "0) UpdateLocation".rjust(20) + "\t\t\tStealthy SMS Interception"
 
     print
     print "or type back to go back to Attacks Menu".rjust(42)
@@ -90,10 +90,10 @@ def Fraud():
     print " \033[31mFraud\033[0m ".center(105, "#")
     print " \033[34mSelect a Message from the below\033[0m ".center(105, "#")
     print
-    print "   Message".rjust(10) + "\t\t\t\tCategory"
-    print "   --------                            --------"
-    print "0) SendIMSI".rjust(14) + "\t\t\t\t CAT3"
-    print "1) MTForwardSMS SMS Spoofing".rjust(31) + "\t\t CAT3"
+    print "   Message".rjust(10) + "\t\t\t\tDescription"
+    print "   --------                            ------------"
+    print "0) SendIMSI".rjust(14) + "\t\t\t\tRetrieving IMSI of a subscriber"
+    print "1) MTForwardSMS".rjust(18) + "\t\t\tSMS Phishing and Spoofing"
 
     print
     print "or type back to go back to Attacks Menu".rjust(42)
@@ -119,9 +119,9 @@ def DoS():
     print " \033[31mDenial of Service\033[0m ".center(105, "#")
     print " \033[34mSelect a Message from the below\033[0m ".center(105, "#")
     print
-    print "   Message".rjust(10) + "\t\t\t\tCategory"
-    print "   --------                            --------"
-    print "0) PurgeMS-Subscriber DoS".rjust(28) + "\t\t CAT3"
+    print "   Message".rjust(10) + "\t\t\t\tDescription"
+    print "   --------                            ------------"
+    print "0) PurgeMS-Subscriber DoS".rjust(28) + "\t\t Mass DoS attack on Subscribers to take them off network"
 
     print
     print "or type back to go back to Attacks Menu".rjust(42)
