@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # encoding: utf-8
-'''
-SS7 main 
+"""
+SS7 main
 
 @author:     Loay Abdelrazek
 
 @copyright:  2018. All rights reserved.
 
 @license:    MIT license
-'''
+"""
 
 import os
 import time

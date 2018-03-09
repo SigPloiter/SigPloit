@@ -1,17 +1,13 @@
 #!/usr/bin/env python
-'''
+
+"""
 Created on 1 Feb 2018
 
 @author: loay
-'''
+"""
 
-import sys
-import os
 import signal
-import time
-from ss7.tracking import *
-from ss7.interception import *
-from ss7.fraud import *
+
 from ss7.dos import *
 from ss7main import *
 
@@ -129,10 +125,9 @@ X      | X     |  X    |   X   |    X  |     X |      X|\|
     print
 
 
-
 def mainMenu():
     os.system('clear')
-    banner('SiGploit')
+    banner('SigPloit')
     print "\033[33m[-][-]\033[0m\t\tSignaling Exploitation Framework\t\033[33m [-][-]\033[0m"
     print "\033[33m[-][-]\033[0m\t\t\tVersion:\033[31mBETA 0.4\033[0m\t\t\033[33m [-][-]\033[0m"
     print "\033[33m[-][-]\033[0m\t\tAuthor:\033[32mLoay AbdelRazek(@sigploit)\033[0m\t\033[33m [-][-]\033[0m\n"
@@ -153,7 +148,7 @@ def mainMenu():
     print "3) SIP".rjust(8) + "\t\t4G VoLTE attacks"
 
     print
-    print "or quit to exit SiGploit\n".rjust(28)
+    print "or quit to exit SigPloit\n".rjust(28)
 
     choice = raw_input("\033[34msig\033[0m\033[37m>\033[0m ")
 
@@ -177,7 +172,7 @@ def mainMenu():
         time.sleep(2)
         mainMenu()
     elif choice == "quit" or choice == "exit":
-        print '\nYou are now exiting SiGploit...'
+        print '\nYou are now exiting SigPloit...'
         time.sleep(1)
         sys.exit(0)
     else:
@@ -187,7 +182,7 @@ def mainMenu():
 
 
 def signal_handler(signal, frame):
-    print '\nYou are now exiting SiGploit...'
+    print '\nYou are now exiting SigPloit...'
     time.sleep(1)
     sys.exit(0)
 
