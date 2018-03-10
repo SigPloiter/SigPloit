@@ -1,18 +1,18 @@
 # List of Contributors
 - Rosalia D'Alessandro, Telecom Italia
 
-# SiGploit
-SiGploit a signaling security testing framework dedicated to Telecom Security professionals and reasearchers to pentest and exploit vulnerabilites in the signaling protocols used in mobile operators regardless of the geneartion being in use.
-SiGploit aims to cover all used protocols used in the operators interconnects SS7, GTP (3G), Diameter (4G) or even SIP for IMS and VoLTE infrastructures used in the access layer and SS7 message encapsulation into SIP-T.
+# SigPloit
+SigPloit a signaling security testing framework dedicated to Telecom Security professionals and reasearchers to pentest and exploit vulnerabilites in the signaling protocols used in mobile operators regardless of the geneartion being in use.
+SigPloit aims to cover all used protocols used in the operators interconnects SS7, GTP (3G), Diameter (4G) or even SIP for IMS and VoLTE infrastructures used in the access layer and SS7 message encapsulation into SIP-T.
 Recommendations for each vulnerability will be provided to guide the tester and the operator the steps that should be done to enhance their security posture
 
-SiGploit is developed on several versions
+SigPloit is developed on several versions
 
 Note: In order to test SS7 attacks, you need to have an SS7 access or you can test in the virtual lab with the provided server sides of the attacks, the used values are provided.
 
   Version 1: SS7
   -------------
-  SiGploit will initially start with SS7 vulnerabilities providing the messages used to test the below attacking scenarios
+  SigPloit will initially start with SS7 vulnerabilities providing the messages used to test the below attacking scenarios
     A- Location Tracking
     B- Call and SMS Interception
     C- Fraud
@@ -34,7 +34,7 @@ Note: In order to test SS7 attacks, you need to have an SS7 access or you can te
   ------------------
   This last Version will introduce the reporting feature. A comprehensive report with the tests done along with the recommendations provided for each vulnerability that has been exploited.
   
-    BETA Version of SiGploit will have the Location Tracking attacks of the SS7 phase 1
+    BETA Version of SigPloit will have the Location Tracking attacks of the SS7 phase 1
 
 ## Installation and requirements
 The requirements for this project are:
