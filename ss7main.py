@@ -94,6 +94,7 @@ def Fraud():
     print "   --------                            ------------"
     print "0) SendIMSI".rjust(14) + "\t\t\t\tRetrieving IMSI of a subscriber"
     print "1) MTForwardSMS".rjust(18) + "\t\t\tSMS Phishing and Spoofing"
+    print "2) InsertSubscriberData".rjust(26) + "\t\tSubscriber Profile Maniuplation"
 
     print
     print "or type back to go back to Attacks Menu".rjust(42)
@@ -105,6 +106,8 @@ def Fraud():
         ss7.fraud.simsi()
     elif choice == "1":
         ss7.fraud.mtsms()
+    elif choice == "2":
+        ss7.fraud.isd()
     elif choice == "back":
         attacksMenu()
     else:
