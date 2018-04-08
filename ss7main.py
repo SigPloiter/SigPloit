@@ -111,7 +111,7 @@ def Fraud():
     elif choice == "back":
         attacksMenu()
     else:
-        print '\n\033[31m[-]Error:\033[0m Please Enter a Valid Choice (0-1)'
+        print '\n\033[31m[-]Error:\033[0m Please Enter a Valid Choice (0-2)'
         time.sleep(1.5)
         Fraud()
 
