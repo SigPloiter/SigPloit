@@ -1,15 +1,25 @@
 #!/usr/bin/env python
 
 """
+SigPloit Main
+
 Created on 1 Feb 2018
 
 @author: loay
 """
 
 import signal
-
+import sys
+import os
+import time
+from ss7.tracking import *
+from ss7.interception import *
+from ss7.fraud import *
 from ss7.dos import *
 from ss7main import *
+from colorama import init
+from termcolor import cprint
+from pyfiglet import figlet_format
 
 
 def banner(word):
@@ -143,8 +153,8 @@ def mainMenu():
     print "   Module".rjust(10) + "\t\t\tDescription"
     print "   --------                --------------------"
     print "0) SS7".rjust(8) + "\t\t2G/3G Voice and SMS attacks"
-    print "1) Diameter".rjust(13) + "\t\t4G Data attacks"
-    print "2) GTP".rjust(8) + "\t\t3G Data attacks"
+    print "1) GTP".rjust(8) + "\t\t3G/4G Data attacks"
+    print "2) Diameter".rjust(13) + "\t\t4G Data attacks"
     print "3) SIP".rjust(8) + "\t\t4G VoLTE attacks"
 
     print
@@ -153,16 +163,16 @@ def mainMenu():
     choice = raw_input("\033[34msig\033[0m\033[37m>\033[0m ")
 
     if choice == "0":
-        os.system('clear')
+      
         ss7main.attacksMenu()
 
     if choice == "1":
-        print "\n\033[34m[*]\033[0mDiameter will be updated in version 2 release.."
+        print "\n\033[34m[*]\033[0mGTP will be updated in version 2 release.."
         print "\033[34m[*]\033[0mGoing back to Main Menu"
         time.sleep(2)
         mainMenu()
     elif choice == "2":
-        print "\n\033[34m[*]\033[0mGTP will be updated in version 3 release.."
+        print "\n\033[34m[*]\033[0mDiameter will be updated in version 3 release.."
         print "\033[34m[*]\033[0mGoing back to Main Menu"
         time.sleep(2)
         mainMenu()
@@ -193,9 +203,9 @@ if __name__ == '__main__':
     mainMenu()
 
 if __name__ == '__sigploit__':
-    LocationTracking()
-    Interception()
-    Fraud()
-    DoS()
+    ss7tracking()
+    ss7interception()
+    ss7fraud()
+    ss7dos()
     attacksMenu()
     mainMenu()
