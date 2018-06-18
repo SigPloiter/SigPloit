@@ -19,7 +19,7 @@ import ss7.dos
 import sigploit
 
 
-def LocationTracking():
+def ss7tracking():
     os.system('clear')
 
     print " \033[31mLocation Tracking\033[0m ".center(105, "#")
@@ -54,10 +54,10 @@ def LocationTracking():
     else:
         print '\n\033[31m[-]Error:\033[0m Please Enter a Valid Choice (0 - 4)'
         time.sleep(1.5)
-        LocationTracking()
+        ss7tracking()
 
 
-def Interception():
+def ss7interception():
     os.system('clear')
 
     print " \033[31mInterception\033[0m ".center(105, "#")
@@ -71,7 +71,7 @@ def Interception():
     print "or type back to go back to Attacks Menu".rjust(42)
 
     choice = raw_input(
-        "\033[37m(\033[0m\033[2;31mInterception\033[0m\033[37m)>\033[0m ")
+        "\033[37m(\033[0m\033[2;31minterception\033[0m\033[37m)>\033[0m ")
 
     if choice == "0":
         ss7.interception.ul()
@@ -81,10 +81,10 @@ def Interception():
     else:
         print '\n\033[31m[-]Error:\033[0m Please Enter a Valid Choice (0)'
         time.sleep(1.5)
-        Interception()
+        ss7interception()
 
 
-def Fraud():
+def ss7fraud():
     os.system('clear')
 
     print " \033[31mFraud\033[0m ".center(105, "#")
@@ -100,7 +100,7 @@ def Fraud():
     print "or type back to go back to Attacks Menu".rjust(42)
 
     choice = raw_input(
-        "\033[37m(\033[0m\033[2;31mFraud\033[0m\033[37m)>\033[0m ")
+        "\033[37m(\033[0m\033[2;31mfraud\033[0m\033[37m)>\033[0m ")
 
     if choice == "0":
         ss7.fraud.simsi()
@@ -113,10 +113,10 @@ def Fraud():
     else:
         print '\n\033[31m[-]Error:\033[0m Please Enter a Valid Choice (0-2)'
         time.sleep(1.5)
-        Fraud()
+        ss7fraud()
 
 
-def DoS():
+def ss7dos():
     os.system('clear')
 
     print " \033[31mDenial of Service\033[0m ".center(105, "#")
@@ -130,7 +130,7 @@ def DoS():
     print "or type back to go back to Attacks Menu".rjust(42)
 
     choice = raw_input(
-        "\033[37m(\033[0m\033[2;31mDoS\033[0m\033[37m)>\033[0m ")
+        "\033[37m(\033[0m\033[2;31mdos\033[0m\033[37m)>\033[0m ")
 
     if choice == "0":
         ss7.dos.purge()
@@ -139,7 +139,7 @@ def DoS():
     else:
         print '\n\033[31m[-]Error:\033[0m Please Enter a Valid Choice (0)'
         time.sleep(1.5)
-        DoS()
+        ss7dos()
 
 
 def attacksMenu():
@@ -155,21 +155,16 @@ def attacksMenu():
     print "or type back to return to the main menu".rjust(42)
     print
 
-    choice = raw_input(
-        "\033[37m(\033[0m\033[2;31mAttacks\033[0m\033[37m)>\033[0m ")
+    choice = raw_input("\033[37m(\033[0m\033[2;31mattacks\033[0m\033[37m)>\033[0m ")
 
     if choice == "0":
-        LocationTracking()
-
+        ss7tracking()
     elif choice == "1":
-        Interception()
-
+        ss7interception()
     elif choice == "2":
-        Fraud()
-
+        ss7fraud()
     elif choice == "3":
-        DoS()
-
+        ss7dos()
     elif choice == "back":
         sigploit.mainMenu()
     else:
