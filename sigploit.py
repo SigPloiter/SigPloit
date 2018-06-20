@@ -155,7 +155,7 @@ def mainMenu():
     print "0) SS7".rjust(8) + "\t\t2G/3G Voice and SMS attacks"
     print "1) GTP".rjust(8) + "\t\t3G/4G Data attacks"
     print "2) Diameter".rjust(13) + "\t\t4G Data attacks"
-    print "3) SIP".rjust(8) + "\t\t4G VoLTE attacks"
+    print "3) SIP".rjust(8) + "\t\t4G IMS attacks"
 
     print
     print "or quit to exit SigPloit\n".rjust(28)
