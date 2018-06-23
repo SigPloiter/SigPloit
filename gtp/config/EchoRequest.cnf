@@ -1,0 +1,71 @@
+##  Begins of GENERIC SECTION  ##
+ 
+[GENERIC]
+	#Possible supported values: 
+	# 0: S1-U eNB GTP-U interface
+	# 1: S1-U SGW GTP-U interface
+	# 4: S5/S8 SGW GTP-U interface
+	# 5: S5/S8 PGW GTP-U interface
+	# 6: S5/S8 SGW GTP-C interface
+	# 7: S5/S8 PGW GTP-C interface
+	# 10: S11 MME GTP-C interface
+	# 11: S4/S11 SGW GTP-C interface
+
+	interface = 7
+
+    # 1: "echo-request",
+    # 2: "echo-response",
+    # 32: "create-session-request",
+    # 33: "create-session-response",
+    # 34: "modify-bearer-request",
+    # 35: "modify-bearer-response",
+    # 36: "delete-session-request",
+    # 37: "delete-session-response",
+    # 38: "change-notification-request",
+    # 39: "change-notification-response", 
+    # 64: "modify-bearer-command",   
+    # 65: "modify-bearer-failure-indication",
+    # 66: "delete-bearer-command",   
+    # 67: "delete-bearer-failure-indication",    
+    # 68: "bearer-resource-command",   
+    # 69: "bearer-resource-failure-indication",     
+    # 70: "downlink-data-notify-failure-indication",
+    # 71: "trace-session-activation",
+    # 72: "trace-session-deactivation",
+    # 73: "stop-paging-indication",
+    # 95: "create-bearer-request",
+    # 96: "create-bearer-response",
+    # 97: "update-bearer-request",
+    # 98: "update-bearer-response",
+    # 99: "delete-bearer-request",
+    # 100: "delete-bearer-response",       
+    # 170: "realease-bearers-request",
+    # 171: "realease-bearers-response",
+    # 176: "downlink-data-notify",
+    # 177: "downlink-data-notify-acknowledge",
+
+	#List of path management message's types. 
+	base_message_list = 1,2
+	
+	#List of 3gpp message's types
+	3gpp_messages_list = , 
+	#sr-dl-ade.be-secure.it (163.162.22.120)
+    source_ip = 127.0.0.1
+    teid = 0x00000000
+    sqn = 0x00000000
+##  Begins of IEs SECTION  ## 
+
+[IES]
+    imsi = 222885500003199
+    mcc = 222
+    mnc = 88
+    lac = 2788
+    rac = 1
+    apn = wap.tim.it
+    primary_dns = 127.0.0.1
+    secondary_dns = 127.0.0.1
+    gsn= 127.0.0.1
+    msisdn = 393282270202
+    geo_type = 0 
+    imei= 3518280450609004
+    rat_type = E-UTRAN

@@ -1,0 +1,53 @@
+##  Begins of GENERIC SECTION  ##
+ 
+[GENERIC]
+	#Possible supported interface values : 
+	# 0: S1-U eNB GTP-U interface
+	# 1: S1-U SGW GTP-U interface
+	# 4: S5/S8 SGW GTP-U interface
+	# 5: S5/S8 PGW GTP-U interface
+	# 6: S5/S8 SGW GTP-C interface
+	# 7: S5/S8 PGW GTP-C interface
+	# 10: S11 MME GTP-C interface
+	# 11: S4/S11 SGW GTP-C interface
+
+	interface = 7
+
+    #possible messages to use
+    # 34: "modify-bearer-request",
+    # 36: "delete-session-request" (default),
+    # 99: "delete-bearer-request",   
+	
+	#List of 3gpp message's types. 
+	#integer value followed by comma
+	3gpp_messages_list = 34,
+	
+    source_ip = 127.0.0.1
+    
+    #hex value followed by comma    
+    teid = 0x0000001A,
+    
+    #hex value followed by comma    
+    sqn = 0x00000000,
+    
+##  Begins of IEs SECTION  ## 
+
+[IES]
+    mcc = 333
+    mnc = 88
+    lac = 2788
+    rac = 1
+    ebi = 8
+    
+#needed only by delete bearer request and modify-bearer-request. 
+# possible vallues: 0, 2. Suggested value 0
+    node_id_type = 0  
+
+#needed only by delete bearer request. Suggested value 3 or 84, 87, 88, 89,
+# 90, 93, 96, 102
+    cause = 3
+    
+#needed only by modify-bearer-request. 
+# possible values: 0, 1. Use 1 if the Dos is created modifying the S-GW address
+# with the value of source_ip, 0 otherwise.
+    fteid = 0
