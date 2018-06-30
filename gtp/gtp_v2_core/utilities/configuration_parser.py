@@ -33,7 +33,7 @@
 
 import os
 import sys
-sys.path.insert(0, os.path.join(os.path.expanduser("~"), 'SigPloit/gtp/'))
+sys.path.insert(0, os.path.join(os.getcwd(), 'gtp/'))
 
 from configobj import ConfigObj, ConfigObjError
 
