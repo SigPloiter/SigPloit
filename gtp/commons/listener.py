@@ -8,7 +8,7 @@ Created on 12 Dec 2017
 import threading
 import errno, sys
 import os
-sys.path.insert(0, os.path.join(os.path.expanduser("~"), 'SigPloit/gtp/'))
+sys.path.insert(0, os.path.join(os.getcwd(), 'gtp/'))
 
 import struct
 from socket import socket, timeout, error
