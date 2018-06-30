@@ -6,7 +6,7 @@ Created on 12 Dec 2017
 import threading
 import os
 import sys
-sys.path.insert(0, os.path.join(os.path.expanduser("~"), 'SigPloit/gtp/'))
+sys.path.insert(0, os.path.join(os.getcwd(), 'gtp/'))
 
 from socket import socket, error, AF_INET, SOCK_DGRAM, timeout, errno
 import time
