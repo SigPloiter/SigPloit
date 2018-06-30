@@ -14,11 +14,7 @@ import sigploit
 import gtpmain
 import time
 
-from subprocess import *
 from attacks.info import discover_gtp_nodes
-
-teidiscover_path = os.path.join(os.getcwd(),'gtp/attacks/info')
-teidpredict_path = os.path.join(os.getcwd(),'gtp/attacks/info')
 
 
 def nediscover():
