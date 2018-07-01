@@ -1,3 +1,4 @@
 colorama==0.3.9
 pyfiglet==0.7.5
 termcolor==1.1.0
+configobj==1.11.0
