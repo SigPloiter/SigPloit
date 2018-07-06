@@ -89,7 +89,7 @@ class Listener(threading.Thread):
                         continue
                     
                     
-                    logWarn("Received response to sent msg %s from ip %s"%(
+                    logOk("Received response to sent msg %s from ip %s"%(
                         GTPmessageTypeStr[req_msg_type], addr[0]), 
                             verbose = self.is_verbose, TAG = self.TAG_NAME) 
                     if req_msg_type == GTPmessageTypeDigit["echo-request"] :
