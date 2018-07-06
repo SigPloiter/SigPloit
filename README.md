@@ -48,4 +48,6 @@ To run use
 
     cd SigPloit
     
+    sudo pip install -r requirements.txt
+    
     python sigploit.py
