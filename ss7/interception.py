@@ -25,7 +25,7 @@ def ul():
         if updateLocation == 0:
             it = raw_input('\nWould you like to go back to Interception Menu? (y/n): ')
             if it == 'y' or it == 'yes':
-                ss7main.Interception()
+                ss7main.ss7interception()
             elif it == 'n' or it == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
@@ -42,4 +42,4 @@ def ul():
     except CalledProcessError as e:
         print "\033[31m[-]Error:\033[0mUpdateLocation Failed to Launch, Error: " + e.message
         time.sleep(2)
-        ss7main.Interception()
+        ss7main.ss7interception()
