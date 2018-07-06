@@ -28,7 +28,7 @@ def simsi():
         if sendIMSI == 0:
             fr = raw_input('\nWould you like to go back to Fraud Menu? (y/n): ')
             if fr == 'y' or fr == 'yes':
-                ss7main.Fraud()
+                ss7main.ss7fraud()
             elif fr == 'n' or fr == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
@@ -44,7 +44,7 @@ def simsi():
     except CalledProcessError as e:
         print "\033[31m[-]Error:\033[0mSendIMSI Failed to Launch, " + str(e)
         time.sleep(2)
-        ss7main.Fraud()
+        ss7main.ss7fraud()
 
 
 def mtsms():
@@ -55,7 +55,7 @@ def mtsms():
         if mtForwardSMS == 0:
             fr = raw_input('\nWould you like to go back to Fraud Menu? (y/n): ')
             if fr == 'y' or fr == 'yes':
-                ss7main.Fraud()
+                ss7main.ss7fraud()
             elif fr == 'n' or fr == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
@@ -71,7 +71,7 @@ def mtsms():
     except CalledProcessError as e:
         print "\033[31m[-]Error:\033[0mMTForwardSMS Failed to Launch, " + str(e)
         time.sleep(2)
-        ss7main.Fraud()
+        ss7main.ss7fraud()
 
 
 def cl():
@@ -82,7 +82,7 @@ def cl():
         if cancelLocation == 0:
             fr = raw_input('\nWould you like to go back to Fraud Menu? (y/n): ')
             if fr == 'y' or fr == 'yes':
-                ss7main.Fraud()
+                ss7main.ss7fraud()
             elif fr == 'n' or fr == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
@@ -98,7 +98,7 @@ def cl():
     except CalledProcessError as e:
         print "\033[31m[-]Error:\033[0mCancelLocation Failed to Launch, " + str(e)
         time.sleep(2)
-        ss7main.Fraud()
+        ss7main.ss7fraud()
         
 def isd():
 	
@@ -109,7 +109,7 @@ def isd():
 		if insertSD == 0:
 			fr = raw_input('\nWould you like to go back to Fraud Menu? (y/n): ')
 			if fr == 'y' or fr == 'yes':
-				ss7main.Fraud()
+				ss7main.ss7fraud()
 			elif fr == 'n' or fr == 'no':
 				attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
 				if attack_menu == 'y'or attack_menu =='yes':
@@ -126,4 +126,4 @@ def isd():
 	except CalledProcessError as e:
 		print "\033[31m[-]Error:\033[0mInsertSubscriberData Failed to Launch, " + str(e)
 		time.sleep(2)
-		ss7main.Fraud()
+		ss7main.ss7fraud()
