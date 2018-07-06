@@ -28,7 +28,7 @@ def sri():
         if sendRoutingInfo == 0:
             lt = raw_input('\nWould you like to go back to LocationTracking Menu? (y/n): ')
             if lt == 'y' or lt == 'yes':
-                ss7main.LocationTracking()
+                ss7main.ss7tracking()
             elif lt == 'n' or lt == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
@@ -44,7 +44,7 @@ def sri():
     except CalledProcessError as e:
         print "\033[31m[-]Error:\033[0mSendRoutingInfo Failed to Launch, " + e.message
         time.sleep(2)
-        ss7main.LocationTracking()
+        ss7main.ss7tracking()
 
 
 def psi():
@@ -55,7 +55,7 @@ def psi():
         if psi == 0:
             lt = raw_input('\nWould you like to go back to LocationTracking Menu? (y/n): ')
             if lt == 'y' or lt == 'yes':
-                ss7main.LocationTracking()
+                ss7main.ss7tracking()
             elif lt == 'n' or lt == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
@@ -71,7 +71,7 @@ def psi():
     except CalledProcessError as e:
         print "\033[31m[-]Error:\033[0m" + jar_file + " Failed to Launch, " + e.message
         time.sleep(2)
-        ss7main.LocationTracking()
+        ss7main.ss7tracking()
 
 
 def srism():
@@ -82,7 +82,7 @@ def srism():
         if srism == 0:
             lt = raw_input('\nWould you like to go back to LocationTracking Menu? (y/n): ')
             if lt == 'y' or lt == 'yes':
-                ss7main.LocationTracking()
+                ss7main.ss7tracking()
             elif lt == 'n' or lt == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
@@ -98,7 +98,7 @@ def srism():
     except CalledProcessError as e:
         print "\033[31m[-]Error:\033[0m" + jar_file + " Failed to Launch, " + e.message
         time.sleep(2)
-        ss7main.LocationTracking()
+        ss7main.ss7tracking()
 
 
 def ati():
@@ -109,7 +109,7 @@ def ati():
         if ati == 0:
             lt = raw_input('\nWould you like to go back to LocationTracking Menu? (y/n): ')
             if lt == 'y' or lt == 'yes':
-                ss7main.LocationTracking()
+                ss7main.ss7tracking()
             elif lt == 'n' or lt == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
@@ -125,5 +125,5 @@ def ati():
     except CalledProcessError as e:
         print "\033[31m[-]Error:\033[0m" + jar_file + " Failed to Launch, " + str(e)
         time.sleep(2)
-        ss7main.LocationTracking()
+        ss7main.ss7tracking()
 
