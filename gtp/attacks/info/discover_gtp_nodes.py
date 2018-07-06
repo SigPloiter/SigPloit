@@ -137,7 +137,3 @@ def main(config_file, target, listening=True, verbose = 2):
         if lstn : 
             lstn.stop()        
         return 2
-if __name__ == "__main__":
-    if DEBUG:
-        sys.argv.append("-v")
-    sys.exit(3)
