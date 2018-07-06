@@ -25,7 +25,7 @@ def purge():
         if purgeMS == 0:
             ds = raw_input('\nWould you like to go back to Fraud Menu? (y/n): ')
             if ds == 'y' or ds == 'yes':
-                ss7main.DoS()
+                ss7main.ss7dos()
             elif ds == 'n' or ds == 'no':
                 attack_menu = raw_input('Would you like to choose another attacks category? (y/n): ')
                 if attack_menu == 'y' or attack_menu == 'yes':
