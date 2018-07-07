@@ -39,6 +39,6 @@ def purge():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]\033[0mError:PurgeMS Failed to Launch, " + e.message
+        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7dos()
