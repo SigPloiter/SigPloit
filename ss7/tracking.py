@@ -43,7 +43,7 @@ def sri():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]Error:\033[0mSendRoutingInfo Failed to Launch, " + e.message
+        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7tracking()
 
@@ -70,7 +70,7 @@ def psi():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]Error:\033[0m" + jar_file + " Failed to Launch, " + e.message
+       print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7tracking()
 
@@ -97,7 +97,7 @@ def srism():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]Error:\033[0m" + jar_file + " Failed to Launch, " + e.message
+        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7tracking()
 
@@ -124,7 +124,7 @@ def ati():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]Error:\033[0m" + jar_file + " Failed to Launch, " + str(e)
+        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7tracking()
 
@@ -150,6 +150,6 @@ def srigprs():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]Error:\033[0m" + jar_file + " Failed to Launch,  " + e.message
+        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7tracking()
