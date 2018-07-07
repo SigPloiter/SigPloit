@@ -31,7 +31,7 @@ def ss7tracking():
     print "1) ProvideSubsriberInfo".rjust(26) + "\tReliable Location Tracking"
     print "2) SendRoutingInfoForSM".rjust(26) + "\tReliable Location Tracking, if SMS home routing is not applied,should be run twice to check consistent replies"
     print "3) AnyTimeInterrogation".rjust(26) + "\tLocation Tracking, blocked by most of operators"
-    #print "4) SendRoutingInfoForGPRS".rjust(28) + "\tLocation tracking, used to route data, it will retrieve SGSN GT"
+    print "4) SendRoutingInfoForGPRS".rjust(28) + "\tLocation tracking, used to route data, it will retrieve SGSN GT"
 
     print
     print "or type back to go back to Attacks Menu".rjust(42)
@@ -47,8 +47,8 @@ def ss7tracking():
         ss7.tracking.srism()
     elif choice == "3":
         ss7.tracking.ati()
-    #elif choice == "4":
-        #ss7.tracking.srigprs()
+    elif choice == "4":
+        ss7.tracking.srigprs()
     elif choice == "back":
         attacksMenu()
     else:
