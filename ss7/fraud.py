@@ -42,7 +42,7 @@ def simsi():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]Error:\033[0mSendIMSI Failed to Launch, " + str(e)
+        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7fraud()
 
@@ -69,7 +69,7 @@ def mtsms():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]Error:\033[0mMTForwardSMS Failed to Launch, " + str(e)
+        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7fraud()
 
@@ -96,7 +96,7 @@ def cl():
                         sys.exit(0)
 
     except CalledProcessError as e:
-        print "\033[31m[-]Error:\033[0mCancelLocation Failed to Launch, " + str(e)
+        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
         time.sleep(2)
         ss7main.ss7fraud()
         
@@ -124,6 +124,6 @@ def isd():
 			
 	
 	except CalledProcessError as e:
-		print "\033[31m[-]Error:\033[0mInsertSubscriberData Failed to Launch, " + str(e)
+		print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
 		time.sleep(2)
 		ss7main.ss7fraud()
