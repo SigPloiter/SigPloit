@@ -71,8 +71,8 @@ def psi():
 
     except CalledProcessError as e:
        print "\033[31m[-]Error:\033[0m%s Failed to Launch, %s" %(jar_file, e.message)
-        time.sleep(2)
-        ss7main.ss7tracking()
+       time.sleep(2)
+       ss7main.ss7tracking()
 
 
 def srism():
