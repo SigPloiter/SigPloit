@@ -11,6 +11,8 @@ SigPloit is developed on several versions
 
 Note: In order to test SS7 attacks, you need to have an SS7 access or you can test in the virtual lab with the provided server sides of the attacks, the used values are provided.
 
+For brief intro on SigPloit and Telecom Architecture in general please <a href="https://github.com/SigPloiter/SigPloit/wiki/1--Welcome-to-SigPloit">click here <\a>
+
   Version 1: SS7
   -------------
   SigPloit will initially start with SS7 vulnerabilities providing the messages used to test the below attacking scenarios
