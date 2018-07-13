@@ -16,8 +16,11 @@ For brief intro on SigPloit and Telecom Architecture in general please <a href="
   Version 1: SS7
   -------------
   SigPloit will initially start with SS7 vulnerabilities providing the messages used to test the below attacking scenarios
+  
     A- Location Tracking
+    
     B- Call and SMS Interception
+    
     C- Fraud
   
   Version 2: GTP
