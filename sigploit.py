@@ -142,10 +142,10 @@ X      | X     |  X    |   X   |    X  |     X |      X|\|
 def mainMenu():
     os.system('clear')
 
-    banner('SigPloit')
-    print "\033[33m[-][-]\033[0m\t\tSignaling Exploitation Framework\t\033[33m [-][-]\033[0m"
-    print "\033[33m[-][-]\033[0m\t\t\tVersion:\033[31mBETA 1.1\033[0m\t\t\033[33m [-][-]\033[0m"
-    print "\033[33m[-][-]\033[0m\t\tAuthor:\033[32mLoay AbdelRazek(@sigploit)\033[0m\t\033[33m [-][-]\033[0m\n"
+    banner('         SigPloit')
+    print "\t\t\t\t\t\t\t\t\t\033[33m[-][-]\033[0m\t\tSignaling Exploitation Framework\t\033[33m [-][-]\033[0m"
+    print "\t\t\t\t\t\t\t\t\t\033[33m[-][-]\033[0m\t\t\tVersion:\033[31mBETA 1.1\033[0m\t\t\033[33m [-][-]\033[0m"
+    print "\t\t\t\t\t\t\t\t\t\033[33m[-][-]\033[0m\t\tAuthor:\033[32mLoay AbdelRazek(@sigploit)\033[0m\t\033[33m [-][-]\033[0m\n"
     print
     print "Contributors:"
 
