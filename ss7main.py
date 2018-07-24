@@ -22,8 +22,6 @@ import sigploit
 
 def cleaner():
 
-    print "Removing XML files"
-
     os.system("rm -f *.xml")
 
 def ss7tracking():
