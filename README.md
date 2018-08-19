@@ -13,6 +13,8 @@ Note: In order to test SS7 attacks, you need to have an SS7 access or you can te
 
 For brief intro on SigPloit and Telecom Architecture in general please <a href="https://github.com/SigPloiter/SigPloit/wiki/1--Welcome-to-SigPloit">click here </a>
 
+SigPloit is referenced in GSMA document FS.07 "SS7 and Sigtran Network Security"
+
   Version 1: SS7
   -------------
   SigPloit will initially start with SS7 vulnerabilities providing the messages used to test the below attacking scenarios
