@@ -76,7 +76,7 @@ def psi():
 
 
 def srism():
-    jar_file = 'SendRoutingInfoForSM.jar'
+    jar_file = 'SendRoutingInfoforSM.jar'
 
     try:
         srism = check_call(['java', '-jar', os.path.join(srism_path, jar_file)])
