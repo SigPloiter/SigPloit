@@ -1,0 +1,57 @@
+##  Begins of GENERIC SECTION  ##
+ 
+[GENERIC]
+	#Possible supported values: 
+	# 0: S1-U eNB GTP-U interface
+	# 1: S1-U SGW GTP-U interface
+	# 4: S5/S8 SGW GTP-U interface
+	# 5: S5/S8 PGW GTP-U interface
+	# 6: S5/S8 SGW GTP-C interface
+	# 7: S5/S8 PGW GTP-C interface
+	# 10: S11 MME GTP-C interface
+	# 11: S4/S11 SGW GTP-C interface
+
+	interface = 6
+
+
+	#List of 3gpp message's types
+	#32 create-session-request for discovering c-plane TEID (default)
+	#34 modify-bearer-request for discovering u-plane TEID
+	#95 create-bearer-request for discovering u-plane TEID
+	
+	#integer value followed by comma
+	3gpp_messages_list = 32,
+	 
+    source_ip = 61.153.151.71
+    
+    #teid can be a list of teids
+    #hex value followed by comma    
+    teid = 0x00000000,
+    
+    #sqn can be a list of sqns. each sqn shall correspond to the relative teid
+    #hex value followed by comma    
+    sqn = 0x00000000,
+    
+    num_msg = 10
+##  Begins of IEs SECTION  ## 
+
+[IES]
+    ebi = 5
+    
+#needed only by create session request
+    imsi = 333885500003199
+    mcc = 333
+    mnc = 88
+    lac = 2788
+    rac = 1
+    apn = abc
+    gsn= 127.0.0.1
+    msisdn = 333282270202
+    geo_type = 0 
+    imei= 3518280450609004
+    rat_type = E-UTRAN
+    primary_dns = 127.0.0.1
+    secondary_dns = 127.0.0.1    
+    recovery = 0
+
+
