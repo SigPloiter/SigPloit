@@ -56,7 +56,7 @@ def gtpfraud():
     print
     print "   Attacks".rjust(10) + "\t\t\t\tDescription"
     print "   --------                             ------------"
-    print "0) Tunnel Hijack".rjust(19) + "\t\tTEID Hijack, using: ModifyBearerRequest Message"
+    print "0) Tunnel Hijack".rjust(19) + "\t\tTEID Hijack, using: ModifyBearerRequest Message, TunnelHijack.cnf"
 
     print
     print "or type back to go back to Attacks Menu".rjust(42)
