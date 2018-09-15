@@ -31,7 +31,6 @@ def gtpinfo():
     print "   --------                             ------------"
     print "0) GTP Nodes Discovery".rjust(25) + "\t\tNE Discovery, using: EchoRequest,CreateSession,DeleteSession or DeleteBearer Messages"
     print "1) TEID Allocation Discovery".rjust(31) + "\t\tTEID Discovery, using: CreateSession,ModifyBearer or CreateBearer Messages"
-    #print "2) TEID Sequence Predictability".rjust(34)
 
     print
     print "or type back to go back to Attacks Menu".rjust(42)
