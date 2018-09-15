@@ -78,7 +78,7 @@ def main(config_file, target, listening=True, verbose = 2, output_file='results.
             print "remote network (e.g. 10.0.0.0/24, 10.0.0.1/32) is required"
             return
         # MAIN BODY #
-        if opts.config_file == "" :
+        if config_file == "" :
             print "\033[31m[-]Error:\033[0m missed config file"
             return            
   
