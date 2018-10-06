@@ -5,10 +5,10 @@ Hardcoded Values:
 =================
 Client PC: 1
 Peer PC: 2
-Client IP: 192.168.56.101
+Client IP: 192.168.58.2
 Client POrt: 2905
-Peer IP: 192.168.56.102
-Peer Port: 2906
+Peer IP: 192.168.58.3
+Peer Port: 2901
 Targer MSISDN: 201522222222
 Your GT: [any of your choice]
 
