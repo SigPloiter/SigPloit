@@ -1,6 +1,6 @@
 # List of Contributors
-- Rosalia D'Alessandro, Telecom Italia
-- Ilario Dal Grande, Telecom Italia
+- Rosalia D'Alessandro
+- Ilario Dal Grande
 - Hardik Mehta
 
 # SigPloit
