@@ -50,7 +50,7 @@ The requirements for this project are:
     1) Python 2.7
     2) Java version 1.7 +
     3) sudo apt-get install lksctp-tools
-    4) Linux machine (Windows doesnt support SCTP)
+    4) Linux machine
 
 To run use
 
