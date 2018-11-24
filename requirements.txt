@@ -3,3 +3,4 @@ pyfiglet>=0.7.5
 termcolor>=1.1.0
 configobj>=5.0.6
 IPy>=0.83
+pysctp>=0.6
