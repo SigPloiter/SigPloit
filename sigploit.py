@@ -150,6 +150,7 @@ def mainMenu():
     print "Contributors:"
 
     print "\t\033[31mRosalia D'Alessandro - TelecomItalia\033[0m"
+    print "\t\033[31mIlario Dal Grande    - TelecomItalia\033[0m"
     print
     print
     print
